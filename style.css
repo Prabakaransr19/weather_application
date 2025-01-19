@@ -20,7 +20,7 @@ body{
     top: 0;
     background-color: var(--bg-color1);
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
     margin-bottom: 10px;
     padding: 15px 0;
@@ -71,5 +71,32 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 12px;
-    & .weather-left
+    & .weather-left{
+        grid-column: span 1;
+        & .current-weather{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & h2{
+                margin: 7px 0;
+            }
+            & p{
+                color: #fff;
+            }
+        }
+        & .card-footer{
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        & .forcast-item{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            margin-bottom: 15px;
+            & .icon-wrapper{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
