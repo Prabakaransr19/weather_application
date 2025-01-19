@@ -1,6 +1,3 @@
-
-Here’s a suggested "README" content for your weather application based on the provided design:
-
 Weather Application
   Overview
   The Weather Application provides real-time weather updates and a 5-day weather forecast. It includes additional details like air quality, sunrise and sunset timings, humidity, pressure, visibility, and wind speed. This application is designed to be user-friendly and visually appealing, using a clean and intuitive interface.
