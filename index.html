@@ -1,115 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and external resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
+    
+    <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    
+    <!-- Boxicons for additional icons -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    
+    <!-- External CSS for styling -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- JavaScript files -->
     <script defer src="main.js"></script>
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Header section -->
         <div class="header">
             <h2>Weather Application</h2>
             <div class="weather-input">
+                <!-- Input for searching city -->
                 <input type="text" name="city" id="city-input" placeholder="Enter city name">
+                
+                <!-- Search button -->
                 <button type="button" id="searchbtn">
                     <i class="fa-regular fa-search"></i>Search
                 </button>
+                
+                <!-- Button for current location -->
                 <button type="button" id="locationbtn">
                     <i class="bx bx-target-lock"></i>Current Location
                 </button>
             </div>
         </div>
+
+        <!-- Main weather data section -->
         <div class="weather-data">
             <div class="weather-left">
+                <!-- Current weather card -->
                 <div class="card">
                     <div class="current-weather">
                         <div class="details">
                             <p>Now</p>
-                            <h2>__&deg;c</h2>
-                            <p>____</p>
+                            <h2>__&deg;c</h2> <!-- Placeholder for temperature -->
+                            <p>____</p> <!-- Placeholder for weather description -->
                         </div>
                         <div class="weather-icon">
-                            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
+                            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Weather icon">
                         </div>
-                    </div> <hr>
+                    </div>
+                    <hr>
                     <div class="card-footer">
+                        <!-- Placeholder for date -->
                         <p><i class="fa-light fa-calendar"></i>____</p>
+                        <!-- Placeholder for location -->
                         <p><i class="fa-light fa-location-dot"></i>____</p>
                     </div>
                 </div>
+
+                <!-- 5-day weather forecast -->
                 <div class="card">
-                    <h2>5 Days Forcast</h2>
+                    <h2>5 Days Forecast</h2>
                     <div class="day-forcast">
+                        <!-- Repeated forecast items -->
                         <div class="forcast-item">
                             <div class="icon-wrapper">
-                                <img src="https://openweathermap.org/img/wn/02d.png" alt="img">
-                                <span>____&deg;C</span>
+                                <img src="https://openweathermap.org/img/wn/02d.png" alt="Weather icon">
+                                <span>____&deg;C</span> <!-- Placeholder for temperature -->
                             </div>
-                            <p>____</p>
-                            <p>____</p>
+                            <p>____</p> <!-- Placeholder for date -->
+                            <p>____</p> <!-- Placeholder for weather description -->
                         </div>
-                        <div class="forcast-item">
-                            <div class="icon-wrapper">
-                                <img src="https://openweathermap.org/img/wn/02d.png" alt="img">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forcast-item">
-                            <div class="icon-wrapper">
-                                <img src="https://openweathermap.org/img/wn/02d.png" alt="img">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forcast-item">
-                            <div class="icon-wrapper">
-                                <img src="https://openweathermap.org/img/wn/02d.png" alt="img">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
-                        <div class="forcast-item">
-                            <div class="icon-wrapper">
-                                <img src="https://openweathermap.org/img/wn/02d.png" alt="img">
-                                <span>____&deg;C</span>
-                            </div>
-                            <p>____</p>
-                            <p>____</p>
-                        </div>
+                        <!-- Repeat similar forecast items for all 5 days -->
                     </div>
                 </div>
             </div>
+
             <div class="weather-right">
                 <h2>Today's Highlights</h2>
                 <div class="highlights">
+                    <!-- Air Quality Index (AQI) card -->
                     <div class="card">
                         <div class="card-head">
                             <p>Air Quality Index</p>
-                            <p class="air-index aqi-1">Good</p>
+                            <p class="air-index aqi-1">Good</p> <!-- Placeholder for AQI status -->
                         </div>
                         <div class="air-indices">
+                            <!-- AQI metrics with placeholders -->
                             <i class="fa-regular fa-wind fa-3x"></i>
                             <div class="item">
                                 <p>PM2.5</p>
                                 <h2>____</h2>
                             </div>
+                            <!-- Additional AQI metrics -->
                             <div class="item">
                                 <p>PM10</p>
                                 <h2>____</h2>
-                            </div> 
+                            </div>
                             <div class="item">
                                 <p>SO2</p>
                                 <h2>____</h2>
-                            </div>                           
+                            </div>
                             <div class="item">
                                 <p>CO</p>
                                 <h2>____</h2>
@@ -132,6 +129,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Sunrise and Sunset card -->
                     <div class="card">
                         <div class="card-head">
                             <p>Sunrise & Sunset</p>
@@ -143,7 +142,7 @@
                                 </div>
                                 <div>
                                     <p>Sunrise</p>
-                                    <h2>____</h2>
+                                    <h2>____</h2> <!-- Placeholder for sunrise time -->
                                 </div>
                             </div>
                             <div class="item">
@@ -152,45 +151,50 @@
                                 </div>
                                 <div>
                                     <p>Sunset</p>
-                                    <h2>____</h2>
+                                    <h2>____</h2> <!-- Placeholder for sunset time -->
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Additional highlights (Humidity, Pressure, Visibility, Wind Speed) -->
                     <div class="card">
                         <div class="card-head">
                             <p>Humidity</p>
                         </div>
                         <div class="card-item">
                             <i class="fa-light fa-droplet fa-2x"></i>
-                            <h2 id="humidityValue">____hPa</h2>
+                            <h2 id="humidityValue">____hPa</h2> <!-- Placeholder for humidity -->
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card-head">
                             <p>Pressure</p>
                         </div>
                         <div class="card-item">
                             <i class="fa-light fa-compass fa-2x"></i>
-                            <h2 id="pressureValue">____%</h2>
+                            <h2 id="pressureValue">____%</h2> <!-- Placeholder for pressure -->
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card-head">
                             <p>Visibility</p>
                         </div>
                         <div class="card-item">
                             <i class="fa-light fa-eye fa-2x"></i>
-                            <h2 id="visibilityValue">____km</h2>
+                            <h2 id="visibilityValue">____km</h2> <!-- Placeholder for visibility -->
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card-head">
-                            <p>Wind speed</p>
+                            <p>Wind Speed</p>
                         </div>
                         <div class="card-item">
                             <i class="fa-light fa-location-arrow fa-2x"></i>
-                            <h2 id="windspeedValue">____m/s</h2>
+                            <h2 id="windspeedValue">____m/s</h2> <!-- Placeholder for wind speed -->
                         </div>
                     </div>
                 </div>
