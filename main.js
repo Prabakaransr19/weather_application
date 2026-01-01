@@ -4,7 +4,7 @@ let searchBtn = document.getElementById('searchbtn'); // Button to search weathe
 let locationBtn = document.getElementById('locationbtn'); // Button to get weather for current location
 
 // API key for OpenWeatherMap
-let api_key = 'db79a9b6323b7c4a29ed5d50735feff8',
+let api_key = '', 
 
 // Weather-related DOM elements
 currentWeatherCard = document.querySelectorAll('.weather-left .card')[0], // Current weather display
