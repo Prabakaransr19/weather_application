@@ -1,32 +1,42 @@
-Weather Application
-  Overview
-  The Weather Application provides real-time weather updates and a 5-day weather forecast. It includes additional details like air quality, sunrise and sunset timings, humidity, pressure, visibility, and wind speed. This application is designed to be user-friendly and visually appealing, using a clean and intuitive interface.
+# 🌦️ Weather Dashboard
 
-Features
-    Current Weather: Displays the current temperature, weather condition, date, and location.
-    5-Day Forecast: A forecast showing weather conditions and temperatures for the next five days.
-    Air Quality Index (AQI): Provides detailed AQI information, including CO, PM2.5, PM10, SO2, NO2, NH3, and O3 levels.
-    Sunrise & Sunset Times: Indicates the times for sunrise and sunset for the selected location.
-    Additional Highlights:
-    Humidity
-    Atmospheric Pressure
-    Visibility
-    Wind Speed and Direction
-How to Use
-    Search by City Name:
-    Enter the name of a city in the search bar and click the "Search" button.
-    Current Location:
-    Click the "Current Location" button to fetch weather data for your current location using geolocation.
-    View Data:
-    Explore the real-time weather, air quality index, and a detailed 5-day forecast.
-    Analyze Highlights:
-    Check additional parameters like humidity, pressure, visibility, and wind speed for better weather insights.
-Technologies Used
-Frontend:
-    HTML5, CSS3, JavaScript
-    Framework (if applicable, e.g., React, Vue.js)
-    Backend:
-    API Integration for weather data (e.g., OpenWeatherMap API or similar)
-    Styling:
-    Responsive design for optimal viewing on multiple devices.
-    
+A real-time weather tracking application that provides current conditions, air quality metrics, and a 5-day forecast using the OpenWeatherMap API.
+
+## ⚡ Features
+
+* **Real-time Data:** Instant temperature, humidity, pressure, and wind metrics.
+* **Air Quality Index (AQI):** Detailed breakdown of pollutants (CO, PM2.5, NO2, O3).
+* **5-Day Forecast:** Predictive outlook for temperature and weather conditions.
+* **Geolocation:** One-click "Current Location" lookup.
+* **Sun Cycle:** Accurate Sunrise & Sunset timings.
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Data Source:** OpenWeatherMap API
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR-USERNAME/REPO-NAME.git](https://github.com/YOUR-USERNAME/REPO-NAME.git)
+    ```
+
+2.  **Navigate to the directory**
+    ```bash
+    cd REPO-NAME
+    ```
+
+3.  **Configure API Key**
+    * Get a free API key from [OpenWeatherMap](https://openweathermap.org/api).
+    * Open `script.js` (or your main JS file) and replace `YOUR_API_KEY` with your actual key.
+
+4.  **Run the App**
+    * Simply open `index.html` in your browser.
+    * *Recommended:* Use "Live Server" extension in VS Code for the best experience.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue first to discuss any major changes.
